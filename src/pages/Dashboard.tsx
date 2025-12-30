@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabase';
-import { ChartBar, Users, BookOpen } from 'lucide-react';
+import { BarChart3, Users, BookOpen } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -51,7 +51,7 @@ export default function Dashboard() {
     {
       title: 'Tareas Pendientes',
       value: stats.pendingTasks,
-      icon: ChartBar,
+      icon: BarChart3,
       color: 'bg-yellow-500',
       link: '/tasks',
     },
